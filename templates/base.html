@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{%  static 'css/my_css.css'%}">
+    <title></title>
+  </head>
+  <body>
+    <h1>Курс валюти</h1>
+    <div class="left">
+      <p>Меню</p>
+      <ul>
+        <li><a href="{%url 'start' %}">Головна</a></li>
+        <li><a href="{%url 'dowload_curr' %}">Завантажити КВ</a></li>
+        <li><a href="{%url 'add_post' %}">Форум</a></li>
+      </ul>
+
+    </div>
+    <div class="right">
+      {%block main%}
+
+      {%endblock%}
+    </div>
+
+
+  </body>
+</html>
